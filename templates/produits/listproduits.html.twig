@@ -1,0 +1,28 @@
+<table align="center" border="1">
+<caption> List Products</caption>
+
+<tr>
+    <td>Id</td>
+    <td>title</td>
+    <td>number of products</td>
+    <td>number of likes </td>
+    <td>fabrication date </td>
+    <td>like </td>
+
+
+</tr>
+
+{% for a in list %}
+<tr>
+<td>{{a.id}}</td>
+<td>{{a.titre}}</td>
+<td>{{a.nbproduits}}</td>
+<td>{{a.jaime}}</td>
+<td>{{a.datefa | date}}</td>
+<td><a href="{{path('like',{'id': a.id})}}">Like</a></td>
+
+</tr>
+{% endfor %}
+
+</table>
+

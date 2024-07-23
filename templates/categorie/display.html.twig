@@ -1,0 +1,18 @@
+<table align="center" border="1">
+<caption> Liste categories et leurs produits dont le nombre des produits est superieur a zero </caption>
+
+<tr>
+    <td>titre categorie</td>
+    <td>titre produit</td>
+</tr>
+
+{% for a in listdisplay %}
+<tr>
+<td>{{a.categorie_titre}}</td>
+<td>{{a.produit_titre}}</td>
+</td>
+
+</tr>
+{% endfor %}
+
+</table>
